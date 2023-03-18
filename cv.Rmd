@@ -1,0 +1,221 @@
+---
+name: "Daniel Antonio"
+surname: "Negrón"
+position: "Scientist"
+phone: +1 (555) 555-5555
+profilepic: "profilepic.png"
+# www:
+email: "dnegron2@gmu.edu"
+googlescholar: iEz2FjoAAAAJ
+orcid: "0000-0002-6123-2441"
+github: "dnanto"
+aboutme: "math and programming for art, sport, and research"
+csl: "apa-cv.csl"
+# headcolor: 414141
+header-includes: 
+  - \usepackage{longtable}
+output: 
+  vitae::awesomecv:
+    pandoc_args: ["--lua-filter", "bold.lua"]
+    page_total: true
+    show_footer: true
+    keep_tex: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tibble)
+library(vitae)
+```
+
+# Education
+
+```{r education}
+detailed_entries(
+  tribble(
+    ~what, ~when, ~with, ~where, ~why,
+    "PhD in Bioinformatics and Computational Biology",
+    "Aug 2014 - May 2021",
+    "School of Systems Biology, George Mason University",
+    "Fairfax, Virginia",
+    "Advisor: Dr. Donald Seto",
+    "MS in Bioinformatics",
+    "Nov 2009 - Dec 2011",
+    "The Zanvyl Krieger School of Arts & Sciences, The Johns Hopkins University",
+    "Baltimore, Maryland",
+    NA,
+    "BA in Biochemistry & Molecular Biology; Minor in Computer Science",
+    "Sep 2005 - May 2009",
+    "College of Arts & Sciences, Boston University",
+    "Boston, MA",
+    NA
+  ),
+  what = what, when = when, with = with, where = where, why = why
+)
+```
+
+# Skills
+
+Able to quickly learn new skills and refine existing ones on own initiative.
+
+```{r skills}
+tribble(
+  ~Domain, ~Summary,
+  "Biology", "alignment, annotation, homology modeling, network analysis, PCR assay, phylogenetics",
+  "Computing", "data structures, GPU, HPC, microcontrollers, multithreading, numerical methods, parallel, UI",
+  "Programming", "Compiled: C, C++, C#, Java; Interpreted: AWK, BASH, JavaScript, perl, python; Coreutils",
+  "Mathematics", "machine learning (evolutionary/genetic, decision trees), signed-distance functions, stats",
+  "Reproducibiity", "Conda, Docker, Jupyter Notebook, R Markdown, Snakemake",
+  "Database", "PostgreSQL, SQLite, SQL, ER modeling",
+  "Languages", "Spanish (Co-native), Japanese (JLPT N5)"
+) %>%
+  knitr::kable() %>%
+  kableExtra::row_spec(0, bold = T)
+```
+
+# Experience
+
+```{r experience}
+detailed_entries(
+  tribble(
+    ~what, ~when, ~with, ~where, ~why,
+    "Scientist", "Aug 2011 – Present", "Noblis, Inc.", "Reston, VA",
+    c(
+      "Build low-resource, low-energy edge-computing devices",
+      "Co-develop BioVelocity® for parallel, reference-based alignment of next-generation sequence reads",
+      "Co-develop PSET (PCR Signature Erosion Tool) for in silico bioinformatic analysis of PCR assays",
+      "Design and supervise internship projects",
+      "Design pipeline to discover subspecies-level sequence fingerprints using probabilistic data structures",
+      "Develop an expert system to recommend environmental remediation methods to reduce well-water contamination",
+      "Develop compression algorithm with application of cellular automata and genetic algorithms",
+      "Develop graph algorithm for traffic congestion prediction",
+      "Develop parallel algorithms using MPI for commodity hardware clusters and compiler directives for the CRAT XMT 2",
+      "Develop statistical models to fingerprint nuclear power plant fuel rods",
+      "Execute laboratory protocols for DNA extraction and sequencing with the MinION",
+      "Investigate criminal activity on the dark web using social network analysis",
+      "Lead developer of a distributed virus scanning system for network traffic based on containerized microservices",
+      "Program as a full-stack developer for web and client applications, such as laboratory and data management software",
+      "Reverse-engineer file formats for forensic analysis",
+      "Visualize large data sets using the R and python programming languages"
+    ),
+    "On-Call Technical Intern", "Aug 2011 – Oct 2011", NA, NA,
+    c(
+      "Port the program from the research fellowship to run on the CRAY XMT 2 supercomputer",
+      "Run the program to infer co-expression gene networks to identify virulence factors from P. aeroginosa microarray data"
+    ),
+    "Noblis Bioinformatics Independent Research Project Fellowship",
+    "Jun 2011 – Aug 2011", NA, NA,
+    c(
+      "Upgrade an existing algorithm for the analysis of host-pathogen interaction networks from microarray data",
+      "Develop an MPI-enabled version of the algorithm for parallel execution",
+      "Run the program to infer a co-expression network and identify network motifs from human-plague microarray data"
+    ),
+    "Administrative Assistant II / Data Analyst",
+    "Jun 2011 – Aug 2011", "Infant & Toddler Connection of Fairfax-Falls Church", "Fairfax, VA",
+    c(
+      "Interpret for Spanish speaking customers",
+      "Developed VBA macros for use with Microsoft Office applications",
+      "Automate administrative tasks using Windows batch scripts",
+      "Manage all IT support at the Falls Church satellite site"
+    ),
+    "Undergraduate Researcher / Directed Study",
+    "2008 – 2009", "Laboratory for Biocomputing and Informatics, Boston University", "Boston, MA",
+    c(
+      "Research under the supervision of Dr. Gary Benson",
+      "Implement algorithms for biological data analysis: distance scoring, sequence alignment, and spaced-seed searching",
+      "Develop software to analyze genomic microsatellite junctions and trace tandem repeat evolution"
+    ),
+    "Undergraduate Researcher", "2008 – 2009", "Experimental Condensed Matter Physics, Boston University", "Boston, MA",
+    c(
+      "Research under the supervision of Dr. George Ogurek Zimmerman",
+      "Program a type-II superconductor simulator to investigate phenomena related to the Josephson Effect",
+      "Collaborate on the 2D implementation of the simulator and subsequently developed the 3D version"
+    )
+  ),
+  what = what, when = when, with = with, where = where, why = why
+)
+```
+
+# Projects
+
+```{r projects}
+detailed_entries(
+  tribble(
+    ~with, ~when, ~what, ~why,
+    "Capsid Modeling",
+    "May 2020 - Present",
+    "Application to render viral capsids using Caspar-Klug Theory",
+    c(
+      "In the browser with JavaScript to export SVG (democapsid @ https://dnanto.github.io/democapsid/capsid.html).",
+      "On the GPU with GLSL for realtime renders (protocapsid @ https://www.shadertoy.com/view/dlsGRH)."
+    ),
+    "District Broomball Statistics",
+    "Jun 2019 - Present",
+    "Database and website for seasonal player statistics",
+    c(
+      "Design ER model and built SQLite database and R-based website generation code.",
+      "https://github.com/dnanto/broomball"
+    )
+  ),
+  with = with, when = when, what = what, why = why
+)
+```
+
+# Publications
+
+## Papers
+
+```{r papers}
+bibliography_entries(file.path("bib", "paper.bib"))
+```
+
+## Preprints
+
+```{r preprints}
+bibliography_entries(file.path("bib", "preprint.bib"))
+```
+
+## Patents
+
+```{r patents}
+bibliography_entries(file.path("bib", "patent.bib"))
+```
+
+## Posters
+
+```{r posters}
+bibliography_entries(file.path("bib", "poster.bib"))
+```
+
+## Presentations
+
+```{r presentation}
+bibliography_entries(file.path("bib", "presentation.bib"))
+```
+
+# Competitions
+
+```{r}
+detailed_entries(
+  tribble(
+    ~what, ~when, ~with, ~where, ~why,
+    "Demosplash", "2020-2022", "Carnegie Mellon Computer Club", "Pittsburgh, PA",
+    c(
+      "Nov 2022: Freestyle Audio, 4th place, 364pts, “Toccata Crocuta crocuta”",
+      "Nov 2021: Freestyle Audio, 2nd place, 84pts, “demohouse”; Combined Demo, 5th place, 106pts, “democapsid”",
+      "Nov 2020: Freestyle Audio, 4th place, 120pts, “sodium vapor sky”"
+    ),
+    "Tournament", "2017; 2022", "USA Broomball", "Erie, PA",
+    c(
+      "Oct 2022: Won the Mid-Atlantic Men’s B-bracket as part of the Corruption team representing Washington, D.C.",
+      "Apr 2017: Won the National Men’s D division as part of the Regulators team representing Washington, D.C."
+    ),
+    "Hackathon", "Jun 2015", "Noblis, Inc.", "Falls Church, VA",
+    c(
+      "The objective is to reduce the false positive rate of an existing recall management system for healthcare systems.",
+      "Honorable Mention. Participated as a member of the “Ghost in the Shell Script” team."
+    )
+  ),
+  what = what, when = when, with = with, where = where, why = why
+)
+```

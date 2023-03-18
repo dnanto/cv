@@ -1,0 +1,458 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\colorlet{awesome}{awesome-red}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\photo{profilepic.png}
+\name{Daniel Antonio}{Negrón}
+
+\position{Scientist}
+
+\mobile{+1 (555) 555-5555}
+\email{\href{mailto:dnegron2@gmu.edu}{\nolinkurl{dnegron2@gmu.edu}}}
+\orcid{0000-0002-6123-2441}
+\googlescholar{iEz2FjoAAAAJ}
+\github{dnanto}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{math and programming for art, sport, and research}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{longtable}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{PhD in Bioinformatics and Computational Biology}{School of Systems Biology, George Mason University}{Fairfax, Virginia}{Aug 2014 - May 2021}{\begin{cvitems}
+\item Advisor: Dr. Donald Seto
+\end{cvitems}}
+    \cventry{MS in Bioinformatics}{The Zanvyl Krieger School of Arts \& Sciences, The Johns Hopkins University}{Baltimore, Maryland}{Nov 2009 - Dec 2011}{}\vspace{-4.0mm}
+    \cventry{BA in Biochemistry \& Molecular Biology; Minor in Computer Science}{College of Arts \& Sciences, Boston University}{Boston, MA}{Sep 2005 - May 2009}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+Able to quickly learn new skills and refine existing ones on own
+initiative.
+
+\begin{tabular}{l|l}
+\hline
+\textbf{Domain} & \textbf{Summary}\\
+\hline
+Biology & alignment, annotation, homology modeling, network analysis, PCR assay, phylogenetics\\
+\hline
+Computing & data structures, GPU, HPC, microcontrollers, multithreading, numerical methods, parallel, UI\\
+\hline
+Programming & Compiled: C, C++, C\#, Java; Interpreted: AWK, BASH, JavaScript, perl, python; Coreutils\\
+\hline
+Mathematics & machine learning (evolutionary/genetic, decision trees), signed-distance functions, stats\\
+\hline
+Reproducibiity & Conda, Docker, Jupyter Notebook, R Markdown, Snakemake\\
+\hline
+Database & PostgreSQL, SQLite, SQL, ER modeling\\
+\hline
+Languages & Spanish (Co-native), Japanese (JLPT N5)\\
+\hline
+\end{tabular}
+
+\hypertarget{experience}{%
+\section{Experience}\label{experience}}
+
+\begin{cventries}
+    \cventry{Scientist}{Noblis, Inc.}{Reston, VA}{Aug 2011 – Present}{\begin{cvitems}
+\item Build low-resource, low-energy edge-computing devices
+\item Co-develop BioVelocity® for parallel, reference-based alignment of next-generation sequence reads
+\item Co-develop PSET (PCR Signature Erosion Tool) for in silico bioinformatic analysis of PCR assays
+\item Design and supervise internship projects
+\item Design pipeline to discover subspecies-level sequence fingerprints using probabilistic data structures
+\item Develop an expert system to recommend environmental remediation methods to reduce well-water contamination
+\item Develop compression algorithm with application of cellular automata and genetic algorithms
+\item Develop graph algorithm for traffic congestion prediction
+\item Develop parallel algorithms using MPI for commodity hardware clusters and compiler directives for the CRAT XMT 2
+\item Develop statistical models to fingerprint nuclear power plant fuel rods
+\item Execute laboratory protocols for DNA extraction and sequencing with the MinION
+\item Investigate criminal activity on the dark web using social network analysis
+\item Lead developer of a distributed virus scanning system for network traffic based on containerized microservices
+\item Program as a full-stack developer for web and client applications, such as laboratory and data management software
+\item Reverse-engineer file formats for forensic analysis
+\item Visualize large data sets using the R and python programming languages
+\end{cvitems}}
+    \cventry{On-Call Technical Intern}{}{}{Aug 2011 – Oct 2011}{\begin{cvitems}
+\item Port the program from the research fellowship to run on the CRAY XMT 2 supercomputer
+\item Run the program to infer co-expression gene networks to identify virulence factors from P. aeroginosa microarray data
+\end{cvitems}}
+    \cventry{Noblis Bioinformatics Independent Research Project Fellowship}{}{}{Jun 2011 – Aug 2011}{\begin{cvitems}
+\item Upgrade an existing algorithm for the analysis of host-pathogen interaction networks from microarray data
+\item Develop an MPI-enabled version of the algorithm for parallel execution
+\item Run the program to infer a co-expression network and identify network motifs from human-plague microarray data
+\end{cvitems}}
+    \cventry{Administrative Assistant II / Data Analyst}{Infant \& Toddler Connection of Fairfax-Falls Church}{Fairfax, VA}{Jun 2011 – Aug 2011}{\begin{cvitems}
+\item Interpret for Spanish speaking customers
+\item Developed VBA macros for use with Microsoft Office applications
+\item Automate administrative tasks using Windows batch scripts
+\item Manage all IT support at the Falls Church satellite site
+\end{cvitems}}
+    \cventry{Undergraduate Researcher / Directed Study}{Laboratory for Biocomputing and Informatics, Boston University}{Boston, MA}{2008 – 2009}{\begin{cvitems}
+\item Research under the supervision of Dr. Gary Benson
+\item Implement algorithms for biological data analysis: distance scoring, sequence alignment, and spaced-seed searching
+\item Develop software to analyze genomic microsatellite junctions and trace tandem repeat evolution
+\end{cvitems}}
+    \cventry{Undergraduate Researcher}{Experimental Condensed Matter Physics, Boston University}{Boston, MA}{2008 – 2009}{\begin{cvitems}
+\item Research under the supervision of Dr. George Ogurek Zimmerman
+\item Program a type-II superconductor simulator to investigate phenomena related to the Josephson Effect
+\item Collaborate on the 2D implementation of the simulator and subsequently developed the 3D version
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{projects}{%
+\section{Projects}\label{projects}}
+
+\begin{cventries}
+    \cventry{Application to render viral capsids using Caspar-Klug Theory}{Capsid Modeling}{}{May 2020 - Present}{\begin{cvitems}
+\item In the browser with JavaScript to export SVG (democapsid @ https://dnanto.github.io/democapsid/capsid.html).
+\item On the GPU with GLSL for realtime renders (protocapsid @ https://www.shadertoy.com/view/dlsGRH).
+\end{cvitems}}
+    \cventry{Database and website for seasonal player statistics}{District Broomball Statistics}{}{Jun 2019 - Present}{\begin{cvitems}
+\item Design ER model and built SQLite database and R-based website generation code.
+\item https://github.com/dnanto/broomball
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{papers}{%
+\subsection{Papers}\label{papers}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-negronImpactSARSCoV2Mutations2022}{}}%
+\textbf{Negrón, D.} A., Kang, J., Mitchell, S., Holland, M. Y., Wist,
+S., Voss, J., Brinkac, L., Jennings, K., Guertin, S., Goodwin, B. G., \&
+Sozhamannan, S. (2022). Impact of SARS-CoV-2 Mutations on PCR Assay
+Sequence Alignment. \emph{Frontiers in Public Health}, \emph{10}.
+\url{https://doi.org/10.3389/fpubh.2022.889973}
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronMolecularClockAnalysis2021}{}}%
+\textbf{Negrón, D.} A. (2021). Molecular Clock Analysis of Human
+Adenovirus {[}PhD thesis{]}. In \emph{ProQuest Dissertations and
+Theses}. George Mason University.
+
+\leavevmode\vadjust pre{\hypertarget{ref-wileyLassaVirusCirculating2019}{}}%
+Wiley, M. R., Fakoli, L., Letizia, A. G., Welch, S. R., Ladner, J. T.,
+Prieto, K., Reyes, D., Espy, N., Chitty, J. A., Pratt, C. B., Paola, N.
+D., Taweh, F., Williams, D., Saindon, J., Davis, W. G., Patel, K.,
+Holland, M., \textbf{Negrón, D.}, Ströher, U., \ldots{} Palacios, G.
+(2019). Lassa virus circulating in Liberia: A retrospective genomic
+characterisation. \emph{The Lancet Infectious Diseases}, \emph{19}(12),
+1371--1378. \url{https://doi.org/10.1016/S1473-3099(19)30486-4}
+
+\leavevmode\vadjust pre{\hypertarget{ref-sozhamannanEvaluationSignatureErosion2015}{}}%
+Sozhamannan, S., Holland, M. Y., Hall, A. T., \textbf{Negrón, D.} A.,
+Ivancich, M., Koehler, J. W., Minogue, T. D., Campbell, C. E., Berger,
+W. J., Christopher, G. W., Goodwin, B. G., \& Smith, M. A. (2015).
+Evaluation of Signature Erosion in Ebola Virus Due to Genomic Drift and
+Its Impact on the Performance of Diagnostic Assays. \emph{Viruses},
+\emph{7}(6), 3130--3154. \url{https://doi.org/10.3390/v7062763}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vasudevanPredictingCongestionStates2015}{}}%
+Vasudevan, M., \textbf{Negrón, D.}, Feltz, M., Mallette, J., \&
+Wunderlich, K. (2015). Predicting Congestion States from Basic Safety
+Messages by Using Big-Data Graph Analytics. \emph{Transportation
+Research Record}, \emph{2500}(1), 59--66.
+\url{https://doi.org/10.3141/2500-07}
+
+\hypertarget{preprints}{%
+\subsection{Preprints}\label{preprints}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-negronVectorizedCapsidRendering2021}{}}%
+\textbf{Negrón, D.} A. (2021). \emph{Vectorized Capsid Rendering in the
+Browser with Capsid.js}. \url{https://doi.org/10.1101/2020.12.02.408252}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hollandBioLaboroBioinformaticsSystem2020}{}}%
+Holland, M., \textbf{Negrón, D.}, Mitchell, S., Dellinger, N., Ivancich,
+M., Barrus, T., Thomas, S., Jennings, K. W., Goodwin, B., \&
+Sozhamannan, S. (2020). \emph{BioLaboro: A bioinformatics system for
+detecting molecular assay signature erosion and designing new assays in
+response to emerging and reemerging pathogens}.
+\url{https://doi.org/10.1101/2020.04.08.031963}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hollandmitchelly.PreliminarySilicoAssessment2020}{}}%
+Holland, Mitchell Y., \textbf{Negrón, D.} A., Shane Mitchell, Mychal
+Ivancich, Katharine W. Jennings, Bruce Goodwin, \& Shanmuga Sozhamannan.
+(2020). \emph{Preliminary in silico assessment of the specificity of
+published molecular assays and design of new assays using the available
+whole genome sequences of 2019-nCoV} {[}Article{]}. Noblis, Inc.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronParallelAlgorithmNovo2011a}{}}%
+\textbf{Negrón, D.} A. (2011). \emph{Parallel Algorithm for de novo
+Co-Expression Networks from Microarray Data} {[}Article{]}. The Johns
+Hopkins University.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronMicrosatelliteJunctionCounts2009}{}}%
+\textbf{Negrón, D.} A. (2009). \emph{Microsatellite junction counts are
+inversely proportional to the size, gap, and edit distance of its
+constituent units}. Boston University.
+
+\hypertarget{patents}{%
+\subsection{Patents}\label{patents}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-monacoDataLossPrevention2021a}{}}%
+Monaco, M. K., \textbf{Negrón, D.}, \& Satira, B. (2021). \emph{Data
+loss prevention} (Patent No. US20210165904A1).
+
+\leavevmode\vadjust pre{\hypertarget{ref-omariRapidGenomicSequence2021}{}}%
+Omari, M., Barrus, T. W., Sanders, M., \& \textbf{Negrón, D.} (2021).
+\emph{Rapid genomic sequence classification using probabilistic data
+structures} (Patent No. US11037654B2).
+
+\leavevmode\vadjust pre{\hypertarget{ref-sandersNetworkTopologyDiscovery2021}{}}%
+Sanders, M. J., Masi, D. M., McCabe, E. R., Maciejewski, E. J.,
+Dellinger, N. S., \& \textbf{Negrón, D.} A. (2021). \emph{Network
+topology discovery} (Patent No. US20210184961A1).
+
+\leavevmode\vadjust pre{\hypertarget{ref-monacoDataLossPrevention2021}{}}%
+Monaco, M. K., \textbf{Negrón, D.}, \& Satira, B. (2021). \emph{Data
+loss prevention} (Patent No. US10915654B2).
+
+\leavevmode\vadjust pre{\hypertarget{ref-monacoNetworkSecurityUsing2021}{}}%
+Monaco, M. K., \textbf{Negrón, D.}, Satira, B., \& Collins, M. (2021).
+\emph{Network security using inflated files for anomaly detection}
+(Patent No. US10924502B2).
+
+\leavevmode\vadjust pre{\hypertarget{ref-monacoDataLossPrevention2019}{}}%
+Monaco, M. K., \textbf{Negrón, D.}, \& Satira, B. (2019). \emph{Data
+loss prevention} (Patent No. US10331902B2).
+
+\hypertarget{posters}{%
+\subsection{Posters}\label{posters}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-negronImplementationBacilliformViral2022}{}}%
+\textbf{Negrón, D.} A. (2022, October). Implementation Of Bacilliform
+Viral Capsid Models. \emph{ASM Microbe 2022}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronNextcladeDatasetGenotyping2022}{}}%
+\textbf{Negrón, D.} A., Kang, J., Mitchell, S., \& Dommaraju, K. (2022,
+June). A Nextclade dataset for genotyping Human adenovirus. \emph{ASM
+Microbe 2022}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronPCRLAMPAssays2022}{}}%
+\textbf{Negrón, D.} A., Mitchell, S., Holland, M. Y., Ashford, D., \&
+Jennings, K. (2022, June). PCR and LAMP Assays for African Swine Fever
+Virus and Foot-and-Mouth Disease Virus. \emph{ASM Microbe 2022}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronElongatedCapsidGeneration2021}{}}%
+\textbf{Negrón, D.} A. (2021, April). Elongated Capsid Generation in the
+Browser. \emph{GMU Spring 2021 SSB Student Research Day}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronVectorizedCapsidGeneration2020}{}}%
+\textbf{Negrón, D.} A. (2020, December). Vectorized Capsid Generation in
+the Browser. \emph{Fall 2020 SSB Student Research Day}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-thomasDetectionEngineeredColi2020}{}}%
+Thomas, S., Barrus, T., \& \textbf{Negrón, D.} A. (2020, December).
+Detection of Engineered E. Coli Reference Genomes within NCBI Using
+Molecular Clock Analysis. \emph{Sequencing, Finishing, and Analysis in
+the Future}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronAutomatedMolecularClock2019}{}}%
+\textbf{Negrón, D.} A., \& Sozhamannan, S. (2019, December). Automated
+Molecular Clock Analysis of the O-PS Gene Cluster of Vibrio cholerae.
+\emph{54th US-Japan Joint Panel Conference on Cholera and Other
+Bacterial Enteric Infections}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronPhylogeneticAnalysisOantigen2016}{}}%
+\textbf{Negrón, D.} A., Goodwin, B., Smith, M., \& Sozhamannan, S.
+(2016, June). Phylogenetic Analysis of the O-Antigen Biosynthesis Genes
+in Vibrio cholerae. \emph{Sequencing, Finishing, and Analysis in the
+Future Meeting}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronFunctionalUnityStructural2015}{}}%
+\textbf{Negrón, D.} A., \& Sozhamannan, S. (2015, June). Functional
+Unity in Structural Diversity: Genetic Basis of Diversity in O-Antigen
+Biosynthesis Genes in Vibrio cholerae. \emph{Asm2015 115th General
+Meeting, Computational Genomics, Databases, and Modeling (Division R)}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronPerfectRepeatsDetection2013}{}}%
+\textbf{Negrón, D.} A. (2013). Perfect Repeats Detection on the CRAY XMT
+2. \emph{Noblis, Inc.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronCoExpressionNetworkGeneration2012}{}}%
+\textbf{Negrón, D.} A., \& Thomas, S. (2012, May). Co-Expression Network
+Generation from Microarray Data on the Cray XMT. \emph{Center for
+Biotechnology Education 7th Annual Research Symposium}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronParallelAlgorithmNovo2011}{}}%
+\textbf{Negrón, D.} A. (2011, August). Parallel Algorithm for de novo
+Co-Expression Networks from Microarray Data. \emph{Independent Research
+Project}.
+
+\hypertarget{presentations}{%
+\subsection{Presentations}\label{presentations}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-sozhamannanBuildingSmartWall2018}{}}%
+Sozhamannan, S., \textbf{Negrón, D.} A., Rajavel, M., \& Xie, G. (2018,
+May). Building A Smart Wall With The Strength Of Diversity - What Can We
+Learn From Bacteria? \emph{Sequencing, Finishing, and Analysis in the
+Future}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-negronDeceptiveDefence2017}{}}%
+\textbf{Negrón, D.} A. (2017, March). Deceptive Defence. \emph{BloomCON
+0x02 Forensics and Security Conference}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-collinsMushroomsNotHoney2017}{}}%
+Collins, M., \& \textbf{Negrón, D.} A. (2017, February). Mushrooms Not
+Honey: Making Deceptive Defenses More Toxic for Attackers. \emph{RSA
+Conference}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-baez-cazullBigDataAnalysis2016}{}}%
+Baez-Cazull, S., \textbf{Negrón, D.} A., Rak, A., Bruckner, M., Gimon,
+D., Hayes, P., Jr., James, S., McCabe, E., \& Moore, J. (2016, May). Big
+Data Analysis and Visualization to Identify Best Technology to Meet
+Remedial Objectives. \emph{Tenth International Conference on Remediation
+of Chlorinated and Recalcitrant Compounds}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-thomasImplementingFastSequence2013}{}}%
+Thomas, S., \textbf{Negrón, D.} A., Bolipata, A., Barrus, T., Dellinger,
+N., Holland, M., Tang, J., \& Weaver, D. (2013, May). Implementing Fast
+Sequence Analysis Tools Using a Cray XMT2. \emph{Sequencing, Finishing,
+and Analysis in the Future}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-thomasDiscoveringHostPathogenInteractions2011}{}}%
+Thomas, S., Buthod, J., \& \textbf{Negrón, D.} (2011, November).
+Discovering Host-Pathogen Interactions and Pathways Through Data
+Integration. \emph{Defense Threat Reduction Agency Science and
+Technology Conference}.
+
+\hypertarget{competitions}{%
+\section{Competitions}\label{competitions}}
+
+\begin{cventries}
+    \cventry{Demosplash}{Carnegie Mellon Computer Club}{Pittsburgh, PA}{2020-2022}{\begin{cvitems}
+\item Nov 2022: Freestyle Audio, 4th place, 364pts, “Toccata Crocuta crocuta”
+\item Nov 2021: Freestyle Audio, 2nd place, 84pts, “demohouse”; Combined Demo, 5th place, 106pts, “democapsid”
+\item Nov 2020: Freestyle Audio, 4th place, 120pts, “sodium vapor sky”
+\end{cvitems}}
+    \cventry{Tournament}{USA Broomball}{Erie, PA}{2017; 2022}{\begin{cvitems}
+\item Oct 2022: Won the Mid-Atlantic Men’s B-bracket as part of the Corruption team representing Washington, D.C.
+\item Apr 2017: Won the National Men’s D division as part of the Regulators team representing Washington, D.C.
+\end{cvitems}}
+    \cventry{Hackathon}{Noblis, Inc.}{Falls Church, VA}{Jun 2015}{\begin{cvitems}
+\item The objective is to reduce the false positive rate of an existing recall management system for healthcare systems.
+\item Honorable Mention. Participated as a member of the “Ghost in the Shell Script” team.
+\end{cvitems}}
+\end{cventries}
+
+
+\label{LastPage}~
+\end{document}
