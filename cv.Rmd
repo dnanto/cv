@@ -65,7 +65,7 @@ tribble(
   "Computing", "data structures, GPU, HPC, microcontrollers, multithreading, numerical methods, parallel, UI",
   "Programming", "Compiled: C, C++, C#, Java; Interpreted: AWK, BASH, JavaScript, jq, perl, python; Coreutils",
   "Mathematics", "machine learning (evolutionary/genetic, decision trees), signed-distance functions, stats",
-  "Reproducibility", "Git, Conda, Docker, Git, Jupyter Notebook, R Markdown, Snakemake, Zotero",
+  "Reproducibility", "Conda, Docker, Git, Jupyter Notebook, R Markdown, Snakemake, Zotero",
   "Database", "BLAST+, PostgreSQL, SQLite, SQL, ER modeling",
   "Languages", "Spanish (Co-native), Japanese (JLPT N5)"
 ) %>%
