@@ -90,7 +90,7 @@ detailed_entries(
       "Develop an expert system to recommend environmental remediation methods to reduce well-water contamination",
       "Develop compression algorithm with application of cellular automata and genetic algorithms",
       "Develop graph algorithm for traffic congestion prediction",
-      "Develop parallel algorithms using MPI for commodity hardware clusters and compiler directives for the CRAT XMT 2",
+      "Develop parallel algorithms using MPI for commodity hardware clusters and compiler directives for the CRAY XMT 2",
       "Develop statistical models to fingerprint nuclear power plant fuel rods",
       "Execute laboratory protocols for DNA extraction and sequencing with the MinION",
       "Investigate criminal activity on the dark web using social network analysis",
