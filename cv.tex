@@ -90,7 +90,7 @@
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
 \setlength{\csllabelwidth}{2em}
-\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
  {% don't indent paragraphs
   \setlength{\parindent}{0pt}
   % turn on hanging indent if param 1 is 1
@@ -116,6 +116,10 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 % 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {}
+    {Daniel Antonio Negrón~~~·~~~Curriculum Vitae}
+  {\thepage~ of \pageref{LastPage}~}
 
 
 %-------------------------------------------------------------------------------
@@ -154,7 +158,7 @@ Programming & Compiled: C, C++, C\#, Java; Interpreted: AWK, BASH, JavaScript, j
 \hline
 Mathematics & machine learning (evolutionary/genetic, decision trees), signed-distance functions, stats\\
 \hline
-Reproducibility & Conda, Docker, Git, Jupyter Notebook, R Markdown, Snakemake, Zotero\\
+Reproducibility & Conda, Docker, Git, Jupyter Notebook, pip, R Markdown, Snakemake, Spack, Zotero\\
 \hline
 Database & BLAST+, PostgreSQL, SQLite, SQL, ER modeling\\
 \hline
